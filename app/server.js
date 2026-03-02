@@ -22,7 +22,7 @@ const pool = new Pool({
 
 app.get('/api/cards', async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM balatro_cards');
+        const result = await pool.query('SELECT * FROM balatro_jokers');
         res.json(result.rows);
     } catch (err) {
         console.error('Error ejecutando la query', err.stack);
