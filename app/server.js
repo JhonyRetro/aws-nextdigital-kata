@@ -10,10 +10,10 @@ app.use(cors());
 app.use(express.static('public')); 
 
 const pool = new Pool({
-    user: 'tu_usuario_rds',
-    host: 'tu-endpoint-rds.us-east-1.rds.amazonaws.com', 
+    user: 'RDS_USER',
+    host: 'AWS_ENDPOINT', 
     database: 'postgres',
-    password: 'tu_contraseña_rds',
+    password: 'POSTGRESS_PASSWD',
     port: 5432,
 });
 
