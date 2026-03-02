@@ -15,6 +15,9 @@ const pool = new Pool({
     database: 'postgres',
     password: 'POSTGRESS_PASSWD',
     port: 5432,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 app.get('/api/cards', async (req, res) => {
